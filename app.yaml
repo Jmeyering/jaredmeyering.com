@@ -1,0 +1,42 @@
+application: jaredmeyering-homepage
+version: v1
+runtime: go
+api_version: go1
+
+handlers:
+    # CSS/JS assets
+    - url: /bundle/(.*\.(css|js|png|jpe?g|svg|gif|map))$
+      static_files: public/bundle/\1
+      upload: public/bundle/.*\.(js|css|png|jpe?g|svg|gif|map)$
+      expiration: "365d"
+      secure: always
+
+    # Top Level page routes
+    - url: /styleguide/.*
+      static_files: public/styleguide/index.html
+      upload: public/styleguide/*
+      secure: always
+
+    # Top Level page routes
+    - url: /.*
+      static_files: public/index.html
+      upload: public/index.html
+      secure: always
+
+skip_files:
+    - ^(.*/)?#.*#$
+    - ^(.*/)?.*~$
+    - ^(.*/)?.*\.py[co]$
+    - ^(.*/)?.*/RCS/.*$
+    - ^(.*/)?\..*$
+    - ^(.*/)?\.sw*$
+    - node_modules/*
+    - src/*
+    - webpack*
+    - package.json
+    - deploy.sh
+    - yarn*
+
+automatic_scaling:
+    max_idle_instances: 1
+
