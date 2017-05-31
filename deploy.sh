@@ -4,9 +4,9 @@
 sed -i '/webpack:8080/d' ./public/index.html &&
 
 # Run webpack which will inject the js files into the index.html files
-./node_modules/.bin/webpack &&
+./node_modules/.bin/webpack --config webpack.production.js&&
 
-./node_modules/.bin/styleguidist &&
+./node_modules/.bin/styleguidist build &&
 
 goapp deploy &&
 
