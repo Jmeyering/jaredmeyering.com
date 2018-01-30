@@ -1,7 +1,7 @@
 export default [
   {
     title: 'Go',
-    description: 'Go is my favorite programming language, if I could write Go for the rest of my life I wouldn\'t complain one bit.',
+    description: 'As far as backend languages are concerned, Go is a dream.',
     skills: [
       { href: 'https://golang.org/', text: 'Go' },
       { href: 'https://echo.labstack.com/', text: 'Echo' },
@@ -17,14 +17,12 @@ export default [
       { href: 'https://babeljs.io/', text: 'Babel' },
       { href: 'https://facebook.github.io/react/', text: 'React' },
       { href: 'http://redux.js.org/', text: 'Redux' },
-      { href: 'http://backbonejs.org/', text: 'BackboneJS' },
-      { href: 'http://rivetsjs.com/', text: 'RivetsJS' },
       { href: 'https://nodejs.org/en/', text: 'Node.js' },
     ],
   },
   {
     title: 'PHP',
-    description: 'While I prefer working with microframeworks like silex and slim. I\'ve also implemented major web applications using both the Symfony and Laravel frameworks.',
+    description: 'While I prefer working with microframeworks like silex and slim. I\'ve implemented major web applications using both the Symfony and Laravel monoliths.',
     skills: [
       { href: 'https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/', text: 'PHP 7' },
       { href: 'https://getcomposer.org/', text: 'Composer' },
@@ -39,7 +37,6 @@ export default [
     title: 'CSS',
     skills: [
       { href: 'https://www.styled-components.com/', text: 'Styled Components' },
-      { href: 'https://css-tricks.com/css-modules-part-1-need/', text: 'CSS Modules' },
       { href: 'http://bourbon.io/', text: 'Bourbon' },
       { href: 'http://neat.bourbon.io/', text: 'Neat' },
       { href: 'https://smacss.com/', text: 'SMACSS' },
@@ -49,7 +46,7 @@ export default [
   },
   {
     title: 'Restful API\'s',
-    description: 'API development is my true passion. I prioritize simple to understand and fast interfaces. I enjoy all RESTful API\'s but prefer HAL Implemented API\'s most of all.',
+    description: 'API development is a true passion. I prioritize simple to understand and fast interfaces. While I enjoy all RESTful API\'s I enjoy HATEOAS API\'s most of all.',
     skills: [
       { href: 'https://openapis.org/', text: 'Open API' },
       { href: 'http://restcookbook.com/Basics/hateoas/', text: 'HATEOAS' },
@@ -58,13 +55,15 @@ export default [
   },
   {
     title: 'DevOps',
-    description: 'I enjoy the operations side of development just as much as coding. I have a lot of experience managing UNIX systems manually, however I have implemented puppet to manage our client node infrastructure.',
+    description: 'I enjoy the operations side of development just as much as coding. I\'ve worked to implement robust docker based development and deployment environments.',
     skills: [
-      { href: 'https://puppet.com/', text: 'Puppet Enterprise / Open Source' },
-      { href: 'https://docs.puppet.com/hiera/3.2/', text: 'Hiera' },
-      { href: 'https://puppet.com/presentations/designing-puppet-rolesprofiles-pattern', text: 'Roles / Profiles' },
+      { href: 'https://docker.com/', text: 'Docker' },
       { href: 'http;//aws.amazon.com', text: 'AWS' },
+      { href: 'https://aws.amazon.com/ecs/', text: 'Amazon ECS' },
       { href: 'https://cloud.google.com/', text: 'Google Cloud' },
+      { href: 'https://puppet.com/', text: 'Puppet Enterprise / Open Source' },
+      { href: 'https://puppet.com/presentations/designing-puppet-rolesprofiles-pattern', text: 'Roles / Profiles' },
+      { href: 'https://docs.puppet.com/hiera/3.2/', text: 'Hiera' },
     ],
   },
 ];
